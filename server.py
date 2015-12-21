@@ -56,7 +56,7 @@ def call():
   elif to.startswith("client:"):
     # client -> client
     resp.dial(callerId=from_value).client(to[7:])
-  else:
+  # else:
     # client -> PSTN
     
   return str(resp)
